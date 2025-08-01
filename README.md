@@ -58,10 +58,10 @@ df['is_active'] = df['is_active'].replace({
     '0': 'No', 'n': 'No', 'no': 'No', 'false': 'No'
 })
 
-df.to_csv('new_cleaned_data.csv', index=False)
+df.to_csv('new_cleaned_data.csv', index=False)```
 
 
-## 📊 Dashboard Highlights
+# 📊 Dashboard Highlights
 
 ### Key Sections:
 - 🌍 **Freelancer Count by Country**
