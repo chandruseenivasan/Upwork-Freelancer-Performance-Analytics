@@ -97,20 +97,11 @@ df.to_csv('new_cleaned_data.csv', index=False).
 
 ---
 
-## 🗂️ Project Structure
-📦 upwork-freelancer-analytics
-├── 📄 global_freelancers_raw.csv       # Raw dataset
-├── 🧹 data_cleaning.py                 # Python script for cleaning
-├── 📊 Screenshot-2025-08-01.png        # Dashboard preview image
-└── 📘 README.md                        # This documentation
-
-
----
-
 ## 🚀 Live Dashboard
+📌 -<a href='https://public.tableau.com/app/profile/chandru.s5763/viz/UpworkFreelancerPerformanceAnalytics12/Dashboard1?publish=yes'>  link
 
-📌 [🔗 View on Tableau Public](#)  
-> *(Replace this link with your Tableau Public link)*
+##  Dash board Image
+<img width="1697" height="937" alt="upwork freelance png" src="https://github.com/user-attachments/assets/0cb5f34b-a839-49fc-8df3-e01089db6557" />
 
 ---
 
