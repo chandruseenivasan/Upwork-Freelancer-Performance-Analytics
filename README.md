@@ -30,7 +30,7 @@ Data was cleaned using a custom Python script to ensure consistency before visua
 
 python
 ## 📁 Raw data 
-
+-<a href='https://github.com/chandruseenivasan/Upwork-Freelancer-Performance-Analytics/blob/main/Upwork_freelancers_raw.csv'>
 import pandas as pd
 
 df = pd.read_csv('global_freelancers_raw.csv')
