@@ -34,11 +34,11 @@ import pandas as pd
 
 df = pd.read_csv('global_freelancers_raw.csv')
 
-# Clean client satisfaction
+### Clean client satisfaction
 df['client_satisfaction'] = df['client_satisfaction'].astype(str).str.strip().str.replace('%', '', regex=False)
 df['client_satisfaction'] = df['client_satisfaction'].str.replace('nan', '')
 
-# Clean gender
+### Clean gender
 df['gender'] = df['gender'].astype(str).str.strip().str.lower()
 df['gender'] = df['gender'].map({'m': 'Male', 'male': 'Male', 'f': 'Female', 'female': 'Female'})
 
