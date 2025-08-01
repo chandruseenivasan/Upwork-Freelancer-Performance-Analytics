@@ -30,6 +30,7 @@ Data was cleaned using a custom Python script to ensure consistency before visua
 
 python
 ## 📁 Raw data 
+
 import pandas as pd
 
 df = pd.read_csv('global_freelancers_raw.csv')
@@ -42,17 +43,17 @@ df['client_satisfaction'] = df['client_satisfaction'].str.replace('nan', '')
 df['gender'] = df['gender'].astype(str).str.strip().str.lower()
 df['gender'] = df['gender'].map({'m': 'Male', 'male': 'Male', 'f': 'Female', 'female': 'Female'})
 
-# Clean name
+### Clean name
 df['name'] = df['name'].str.strip('123._')
 
-# Clean hourly rate
+### Clean hourly rate
 df['hourly_rate (USD)'] = df['hourly_rate (USD)'].astype(str).str.replace('$', '', regex=False)
 df['hourly_rate (USD)'] = df['hourly_rate (USD)'].str.replace('USD', '', regex=False).str.strip()
 
-# Clean rating
+### Clean rating
 df['rating'] = df['rating'].apply(lambda x: "" if pd.isna(x) or x == 0.0 else x)
 
-# Clean is_active
+### Clean is_active
 df['is_active'] = df['is_active'].astype(str).str.strip().str.lower()
 df['is_active'] = df['is_active'].replace({
     '1': 'Yes', 'y': 'Yes', 'yes': 'Yes', 'true': 'Yes',
@@ -61,7 +62,8 @@ df['is_active'] = df['is_active'].replace({
 
 df.to_csv('new_cleaned_data.csv', index=False).
 
-## Cleaned data 
+## 🧹 Cleaned data 
+
 
 # 📊 Dashboard Highlights
 
