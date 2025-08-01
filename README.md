@@ -63,7 +63,7 @@ df['is_active'] = df['is_active'].replace({
 df.to_csv('new_cleaned_data.csv', index=False).
 
 ## 🧹 Cleaned data 
--<a href='
+-<a href='https://github.com/chandruseenivasan/Upwork-Freelancer-Performance-Analytics/blob/main/UPwork_cleaned_data.csv'> cleaned data
 
 # 📊 Dashboard Highlights
 
