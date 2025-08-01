@@ -19,7 +19,7 @@ and provide data-driven insights for clients and freelancers alike.
 
 ---
 
-## 🧹 Data ing (Python)
+## 🧹 Data Cleaning (Python)
 
 Data was cleaned using a custom Python script to ensure consistency before visualizing in Tableau. Steps included:
 
