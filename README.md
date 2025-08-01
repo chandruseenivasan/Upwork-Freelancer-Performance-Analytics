@@ -28,9 +28,9 @@ Data was cleaned using a custom Python script to ensure consistency before visua
 - Converted `hourly_rate` from string to numeric by removing `$` and `USD`
 - Handled missing and invalid entries in `rating`
 
-python
 ## 📁 Raw data 
 -<a href='https://github.com/chandruseenivasan/Upwork-Freelancer-Performance-Analytics/blob/main/Upwork_freelancers_raw.csv'> Raw data
+## python
 import pandas as pd
 
 df = pd.read_csv('global_freelancers_raw.csv')
@@ -63,7 +63,7 @@ df['is_active'] = df['is_active'].replace({
 df.to_csv('new_cleaned_data.csv', index=False).
 
 ## 🧹 Cleaned data 
-
+-<a href='
 
 # 📊 Dashboard Highlights
 
